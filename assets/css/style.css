@@ -1,0 +1,531 @@
+* {
+  top: 0;
+
+  left: 0;
+  text-align: center;
+
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+
+  min height: 100vh;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-family: 'Caveat', cursive;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+.content {
+  flex: 1;
+}
+
+/*_________________________________________________________________*/
+/*TEXTOS*/
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  font-family: 'Montserrat'sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-family: 'Montserrat'sans-serif;
+}
+
+h6 {
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*____________________________________________________________________*/
+/*MENU*/
+/*hamburguesa*/
+.navbar-toggler {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* si queremos que aparezca un marco que rodee la hamburqueza al presionar*/
+.navbar-toggler:focus {
+  outline: none;
+}
+
+
+i {
+  font-size: 20px;
+color: white;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 4px 0;
+  min-heigth: 100px;
+
+}
+
+.nav-link {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
+}
+
+/*elegir color que quiero en link al momento de presionarlo*/
+.nav-link:hover {
+  text-decoration: none;
+  color: #afb4ad;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*logo o imagen pequeña que va en el nav*/
+.navbar-brand {
+  color: #ffff;
+}
+
+/*Tamaño logo nav*/
+.logo-brand {
+  min-width: 40px;
+  max-width: 30px;
+  color: #ffffff;
+}
+
+/*___________________________________________________________________*/
+/*IMAGEN CENTRAL Y SU CONTENIDO*/
+/*Imagen*/
+#hero {
+  background-image: url(../img/favorita.jpg);
+  background-size: cover;
+  background-position: top;
+  padding-top: 70px;
+  color: #ffffff;
+  width: 100vw;
+  height: 70vh;
+  border-bottom: 1px solid black;
+  padding-bottom: 0;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 6px 20px;
+  min-width: 100px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #1a1a1a1a;
+}
+
+.btn i {
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+/*margin top del bottom (entrar)*/
+.topmargin-xs {
+  margin-top: 15px;
+}
+
+.topmargin-sm {
+  margin-top: 30px;
+}
+
+.topmargin-lg {
+  margin-top: 60px;
+}
+
+/*Caracteristicas del texto imagen principal*/
+#hero h1 {
+  padding-top: 100px;
+  font-size: 80px;
+  font-variant: normal;
+  align-items: center;
+  text-shadow: 7px 7px 5px #000;
+  color: #fff
+}
+
+@media (max-width: 575.98px) {
+  #hero h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hero h1 {
+    font-size: 60px;
+    line-height: normal;
+  }
+}
+
+#hero h6 {
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #000;
+  margin-top: auto;
+}
+
+@media (max-width: 575.98px) {
+  #hero h6 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hero h6 {
+    font-size: 20px;
+    line-height: 5px;
+  }
+}
+
+/*________________________________________________________________*/
+/*SOBRE MI*/
+#Sobremi h2 {
+  text-align: center;
+}
+
+#Sobremi {
+  padding-top: 0;
+  margin-top: auto;
+}
+
+#Sobremi p {
+  text-align: justify;
+}
+
+.row p, #Sobremi h2, hr {
+}
+
+#Sobremi h2 {
+  font-size: 70px;
+}
+}
+
+@media (min-width: 767.98px) and (max-width: 992.98px) {
+  .row p, #Sobremi h2, hr {
+    col-12;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .row p, #Sobremi h2, hr {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  #Sobremi h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #Sobremi h2 {
+    font-size: 50px;
+  }
+}
+
+/*___________________________________________________________________*/
+.card-deck {
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.card-body {
+  padding: 2
+}
+.card-img-top {
+  margin-top: 15px;
+  height: 420px;
+}
+
+
+@media (max-width: 575.98px) {
+  .card-img-top {
+    width: 240px;
+    height: 200px;
+  }
+
+  .card-deck {
+    width: 276px;
+    height: 200px;
+  }
+
+  #Experiencia h2 {
+    font-size: 30px;
+  }
+
+  #Trabajos h2 {
+    font-size: 25px;
+  }
+
+  #Experiencia h5 {
+    font-size: 6px;
+  }
+
+  #Expeciencia h6 {
+    font-size: 4px;
+  }
+
+  #Experiencia p {
+    font-size: 2px
+  }
+}
+
+#Experiencia h5 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#Experiencia h6 {
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #60615e;
+  text-align: center;
+  line-height: 25px;
+}
+
+#Experiencia p {
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .card-img-top {
+    width: 240px;
+    height: 250px;
+  }
+
+  .card-deck {
+    width: 600px;
+    height: 210px;
+  }
+
+  #Experiencia h2 {
+    font-size: 60px;
+  }
+
+  #Experiencia h5 {
+    font-size: 18px;
+  }
+
+  #Expeciencia h6 {
+    font-size: 20px;
+  }
+
+  #Experiencia p {
+    font-size: 25px
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #Experiencia h2 {
+    font-size: 70px;
+  }
+}
+
+#Trabajos h2 {
+  font-size: 60px;
+}
+
+/*TRABAJOS CARRUSEL*/
+@media (max-width: 321.98px) {
+  .carousel-inner {
+    margin-bottom: 200px;
+    margin: auto;
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+  }
+  .container-fuid footer {
+    width: 100vw;
+    height: 10vh
+  }
+
+  .carousel-indicators li {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #Trabajos h2 {
+    font-size: 30px;
+  }
+  footer i {
+
+  }
+
+  .carousel-indicators li {
+    margin-top: 400px;
+  }
+
+  .carousel-item img {
+    margin: auto;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+  }
+
+  .bd-example h2 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-item img {
+    margin: auto;
+    width: 320px;
+    height: 290px;
+    border-radius: 10%;
+  }
+
+  .carousel-indicators li {
+    margin-top: 380px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  .bd-example h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .carousel-item img {
+    width: 520px;
+    height: 540px;
+    margin: auto;
+    border-radius: 10px;
+  }
+footer {
+  margin-top: -80px;
+}
+
+  #Trabajos h2 {
+    font-size: 50px
+  }
+
+  .carousel-indicators li {
+    margin-top: 660px;
+  }
+
+  .bd-example h2 {
+    font-size: 60px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+
+  #Trabajos {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1279.98px) {
+  .carousel-item img {
+    margin: auto;
+    width: 600px;
+    height: 630px;
+    border-radius: 20px;
+  }
+
+  .carousel-indicators li {
+    margin-top: 740px;
+  }
+
+  .carousel-indicators li {
+    background-color: black;
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 0;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.container-fluid {
+  width: 100vw;
+  margin:auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+
+}
+
+
+
+footer ul {
+  display: flex;
+  margin-button: 25px;
+  list-style: none;
+  margin-top: 12px;
+}
+
+
+
+}
+footer ul li {
+  margin-right: 0;
+
+}
+footer ul li a {
+
+  color: #fff;
+  font-size: 2rem;
+
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  footer {
+    position: fixed;
+    position: relative;
+    margin-top: 105vh;
+  }
+}
+
+
+
+.container-fluid footer a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
